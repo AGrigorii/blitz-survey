@@ -1,0 +1,35 @@
+{
+  "name": "blitz-survey",
+  "version": "0.0.1",
+  "description": "blitz survey for your domain of knowledge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "build": "node ./scripts/build.js && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGrigorii/blitz-survey.git"
+  },
+  "keywords": [
+    "blitz",
+    "survey"
+  ],
+  "author": "Akhremenko Grigorii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AGrigorii/blitz-survey/issues"
+  },
+  "homepage": "https://github.com/AGrigorii/blitz-survey#readme",
+  "dependencies": {
+    "@babel/core": "7.7.0",
+    "@babel/preset-env": "7.7.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "8.0.6"
+  },
+  "devDependencies": {
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10"
+  }
+}

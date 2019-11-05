@@ -1,0 +1,1 @@
+document.getElementById('timer').textContent = "Hello, world!";
