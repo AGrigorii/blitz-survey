@@ -1,0 +1,83 @@
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    color: #424242;
+}
+
+.wrapper {
+    vertical-align: middle;
+    text-align: center;
+    display: table;
+    height: 100%;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#question {
+    display: table-row;
+    font-size: 10vmin;
+    margin: 100px 0;
+    padding: 0 50px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    height: 45vmin;
+    word-break: break-word;
+}
+
+#timer {
+    margin-top: 1vmin;
+    display: table-row;
+    font-size: 20vmin;
+    text-align: center;
+}
+
+.controls {
+    width: 30vmin;
+    height: 10vmin;
+    margin: 5vmin auto;
+    padding: 1vmin 3vmin;
+
+    background: #f1f1f1;
+    border: 1px #ccc solid;
+    border-radius: 2vmin;
+    -moz-border-radius: 2vmin;
+    -webkit-border-radius: 2vmin;
+    text-shadow: #fff 0 1px 0;
+}
+
+td {
+    vertical-align: baseline;
+}
+
+.controls caption {
+    margin-bottom: 15px;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+.controls .key {
+    display: table-cell;
+    margin-right: 5px;
+    padding: 3px 6px;
+
+    color: #fff;
+    background: #333;
+    font: 3vmin Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+    font-weight: bold;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    text-shadow: #000 0 1px 0;
+}
+
+.controls .act {
+    margin: 3px 20px 0 0;
+
+    color: #777;
+    font-size: 2vmin;
+}
+
+.controls .act:last-child {
+    margin-right: 0;
+}
