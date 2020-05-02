@@ -3,10 +3,10 @@ const questionsConfig = require('./questions');
 let currentTimerId = null;
 let currentQuestionId = -1;
 
-function shuffle(arr){
+function shuffle(arr) {
     let j, temp;
-    for(let i = arr.length - 1; i > 0; i--){
-        j = Math.floor(Math.random()*(i + 1));
+    for (let i = arr.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
         temp = arr[j];
         arr[j] = arr[i];
         arr[i] = temp;
@@ -32,9 +32,12 @@ function redrawTimer(remainSeconds = questionsConfig.timeout) {
     }
 }
 
-document.addEventListener('keydown', function(event) {
-    switch (event.code) {
+const keyDownCallback = function (event) {
+    console.log(event);
+    const key = event.code || event.key;
+    switch (key) {
         case 'Space':
+        case 'Spacebar': //IE 11
             redrawTimer();
             break;
         case 'Enter':
@@ -43,7 +46,8 @@ document.addEventListener('keydown', function(event) {
         default:
             return;
     }
-});
+};
+document.addEventListener('keydown', keyDownCallback);
 
 function nextQuestion() {
     getNextQuestionIndex();
