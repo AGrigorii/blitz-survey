@@ -47,6 +47,12 @@ const keyDownCallback = function (event) {
             return;
     }
 };
+
+const spaceButton = document.getElementById('space');
+const enterButton = document.getElementById('enter');
+spaceButton.addEventListener('click', () => redrawTimer());
+enterButton.addEventListener('click', () => nextQuestion());
+
 document.addEventListener('keydown', keyDownCallback);
 
 function nextQuestion() {
