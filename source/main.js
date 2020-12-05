@@ -33,7 +33,6 @@ function redrawTimer(remainSeconds = questionsConfig.timeout) {
 }
 
 const keyDownCallback = function (event) {
-    console.log(event);
     const key = event.code || event.key;
     switch (key) {
         case 'Space':
